@@ -28,7 +28,6 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Appcolor.primaryFloating,
-        // elevation: 8,
         shape: CircleBorder(),
         child: const Icon(Icons.add, color: Colors.white),
       ),
@@ -41,7 +40,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Left side
+            //! Left side
             Row(
               children: [
                 Padding(
@@ -73,7 +72,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
               ],
             ),
 
-            // Right side
+            //! Right side
             Row(
               children: [
                 SizedBox(

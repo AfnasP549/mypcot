@@ -41,6 +41,7 @@ class Appcolor {
   //! icon
   static const Color primaryIcon = Color(0xFF2C3D63);
   static const Color secondaryIcon = Colors.white;
+  static const Color tertiaryIcon = Colors.green;
 
   //!border
   static Color primaryBorder = Colors.white;

@@ -7,10 +7,9 @@ class CalenderHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Get screen width for responsive calculations
+ 
     final double screenWidth = MediaQuery.of(context).size.width;
 
-    // Responsive styling based on breakpoints
     double paddingHorizontal;
     double paddingVertical;
     double titleFontSize;
@@ -25,7 +24,7 @@ class CalenderHeader extends StatelessWidget {
     double maxContainerWidth;
 
     if (screenWidth <= 360) {
-      // Compact screens (e.g., 360x800px)
+      // Compact screens
       paddingHorizontal = 8.0;
       paddingVertical = 4.0;
       titleFontSize = 14.0;
@@ -39,7 +38,7 @@ class CalenderHeader extends StatelessWidget {
       timelineIconSpacing = 8.0;
       maxContainerWidth = 90.0;
     } else if (screenWidth <= 600) {
-      // Medium screens (e.g., 395px, 600px)
+      // Medium screens 
       paddingHorizontal = 10.0;
       paddingVertical = 5.0;
       titleFontSize = 15.0;
@@ -53,7 +52,7 @@ class CalenderHeader extends StatelessWidget {
       timelineIconSpacing = 12.0;
       maxContainerWidth = 110.0;
     } else {
-      // Large screens (e.g., 900px)
+      // Large screens
       paddingHorizontal = 14.0;
       paddingVertical = 6.0;
       titleFontSize = 17.0;

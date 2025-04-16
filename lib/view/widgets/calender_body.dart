@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
-const Color _calendarHighlightColor = Color(0xFF4CAF50); // or use your custom color
-
+const Color _calendarHighlightColor = Color(0xFF4CAF50); 
 class CalenderBody extends StatelessWidget {
   const CalenderBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Get screen width for responsive calculations
+   
     final double screenWidth = MediaQuery.of(context).size.width;
 
-    // Responsive styling based on breakpoints
+    
     double dayFontSize;
     double dateFontSize;
     double columnSpacing;
@@ -18,31 +17,31 @@ class CalenderBody extends StatelessWidget {
     double columnWidth;
 
     if (screenWidth <= 360) {
-      // Compact screens (e.g., 360x800px)
+      // Compact screens 
       dayFontSize = 10.0;
       dateFontSize = 12.0;
       columnSpacing = 4.0;
       dotSize = 6.0;
-      columnWidth = screenWidth / 8.5; // Tight fit for 7 columns
+      columnWidth = screenWidth / 8.5; 
     } else if (screenWidth <= 600) {
-      // Medium screens (e.g., 395px, 600px)
+      // Medium screens 
       dayFontSize = 12.0;
       dateFontSize = 14.0;
       columnSpacing = 6.0;
       dotSize = 8.0;
-      columnWidth = screenWidth / 8; // Slightly more room
+      columnWidth = screenWidth / 8; 
     } else {
-      // Large screens (e.g., 900px)
+      // Large screens 
       dayFontSize = 14.0;
       dateFontSize = 16.0;
       columnSpacing = 8.0;
       dotSize = 10.0;
-      columnWidth = screenWidth / 7.5; // Spacious layout
+      columnWidth = screenWidth / 7.5; 
     }
 
     final List<String> days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
     final List<String> dates = ['20', '21', '22', '23', '24', '25', '26'];
-    const int selectedDay = 3; // Thursday (index 3)
+    const int selectedDay = 3; 
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -52,7 +51,7 @@ class CalenderBody extends StatelessWidget {
         return ConstrainedBox(
           constraints: BoxConstraints(
             maxWidth: columnWidth,
-            minWidth: 40.0, // Prevent columns from shrinking too much
+            minWidth: 40.0, 
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,

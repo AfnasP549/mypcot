@@ -49,7 +49,7 @@ class ContainerThree extends StatelessWidget {
                           bgColor: Appcolor.tertiaryButton,
                           text: 'View Customers',
                           onPressed: () {},
-                          horizontalPadding: 30,
+                          horizontalPadding: 20,
                           verticalPadding: 4,
                         ),
                       ],
@@ -60,7 +60,7 @@ class ContainerThree extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 45, left: 40),
+                          padding: const EdgeInsets.only(top: 45, left: 38),
                           child: Container(
                             decoration: BoxDecoration(
                               color: Appcolor.primaryColor,
@@ -69,7 +69,7 @@ class ContainerThree extends StatelessWidget {
                             child: Column(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 16),
+                                  padding: const EdgeInsets.only(top: 8),
                                   child: Row(
                                     children: [
                                       Text(
@@ -78,7 +78,7 @@ class ContainerThree extends StatelessWidget {
                                       ),
                                       Icon(
                                         Icons.arrow_upward,
-                                        color: Colors.green,
+                                        color: Appcolor.tertiaryIcon,
                                       ),
                                     ],
                                   ),
@@ -94,7 +94,7 @@ class ContainerThree extends StatelessWidget {
 
                         //!card
                         Padding(
-                          padding: const EdgeInsets.only(right: 35, top: 10),
+                          padding: const EdgeInsets.only(right: 60, top: 10),
                           child: Stack(
                             clipBehavior: Clip.none,
                             children: [
@@ -104,7 +104,7 @@ class ContainerThree extends StatelessWidget {
                                     top: 10,
                                     left: 15,
                                     right: 35,
-                                    bottom: 23,
+                                    bottom: 5,
                                   ),
                                   child: Text.rich(
                                     TextSpan(
@@ -139,8 +139,8 @@ class ContainerThree extends StatelessWidget {
                                   clipBehavior: Clip.none,
                                   children: [
                                     Container(
-                                      height: 30.67,
-                                      width: 30.67,
+                                      height: 25,
+                                      width: 25,
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         color: Appcolor.primaryButton,
@@ -158,11 +158,11 @@ class ContainerThree extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            top: 18,
-                                            left: 14,
+                                            top: 16,
+                                            left: 12,
                                             child: Container(
-                                              height: 10,
-                                              width: 10,
+                                              height: 7,
+                                              width: 7,
                                               decoration: BoxDecoration(
                                                 color:
                                                     Appcolor
@@ -181,8 +181,8 @@ class ContainerThree extends StatelessWidget {
                                         clipBehavior: Clip.none,
                                         children: [
                                           Container(
-                                            height: 30.67,
-                                            width: 30.67,
+                                            height: 25,
+                                            width: 25,
                                             decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                               color: Appcolor.primaryButton,
@@ -192,6 +192,7 @@ class ContainerThree extends StatelessWidget {
                                               ),
                                             ),
                                             child: Stack(
+                                              clipBehavior: Clip.none,
                                               children: [
                                                 ClipRect(
                                                   child: Image.asset(
@@ -199,11 +200,11 @@ class ContainerThree extends StatelessWidget {
                                                   ),
                                                 ),
                                                 Positioned(
-                                                  top: 18,
-                                                  left: 14,
+                                                  top: 16,
+                                                  left: 12,
                                                   child: Container(
-                                                    height: 10,
-                                                    width: 10,
+                                                    height: 7,
+                                                    width: 7,
                                                     decoration: BoxDecoration(
                                                       color:
                                                           Appcolor
@@ -219,8 +220,8 @@ class ContainerThree extends StatelessWidget {
                                           Positioned(
                                             left: 23,
                                             child: Container(
-                                              height: 30.67,
-                                              width: 30.67,
+                                              height: 25,
+                                              width: 25,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Appcolor.primaryButton,
@@ -238,11 +239,11 @@ class ContainerThree extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Positioned(
-                                                    top: 18,
-                                                    left: 14,
+                                                    top: 16,
+                                                    left: 12,
                                                     child: Container(
-                                                      height: 10,
-                                                      width: 10,
+                                                      height: 7,
+                                                      width: 7,
                                                       decoration: BoxDecoration(
                                                         color:
                                                             Appcolor

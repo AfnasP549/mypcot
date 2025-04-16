@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mypcot_infotech/core/constants/appcolor.dart';
-import 'package:mypcot_infotech/view/screens/home_screen.dart';
 import 'package:mypcot_infotech/view/widgets/bottom_nav_bar.dart';
 
 void main() {
@@ -10,7 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

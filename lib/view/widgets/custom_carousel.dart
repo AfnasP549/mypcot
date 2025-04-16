@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:mypcot_infotech/view/widgets/container_one.dart';
 import 'package:mypcot_infotech/view/widgets/container_three.dart';
+import 'package:mypcot_infotech/view/widgets/container_two.dart';
 
 class CustomCarousel extends StatelessWidget {
   final List<Widget> containers = [
     ContainerOne(),
-    ContainerOne(),
+    ContainerTwo(),
     ContainerThree()
   ];
 
@@ -15,18 +16,18 @@ class CustomCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0), // outer margin
+      padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: CarouselSlider(
         options: CarouselOptions(
           height: 260.0,
           autoPlay: false,
           enlargeCenterPage: false,
           enableInfiniteScroll: false,
-          viewportFraction: 1.0, // one full container at a time
+          viewportFraction: 1.0, 
         ),
         items: containers.map((widget) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 6.0), // spacing between containers
+            padding: const EdgeInsets.symmetric(horizontal: 6.0), 
             child: widget,
           );
         }).toList(),
